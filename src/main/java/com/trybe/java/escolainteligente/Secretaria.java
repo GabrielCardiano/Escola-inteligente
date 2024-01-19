@@ -34,7 +34,7 @@ public class Secretaria {
     double nota4 = Double.parseDouble(scanner.next());
 
     double mediaFinal = calcularMedia(nota1, nota2, nota3, nota4);
-    System.out.println("A média das notas de " + nome + " é " + mediaFinal + ".");
+    System.out.println("A média das notas de " + nome + " é " + mediaFinal);
 
     scanner.close();
   }
