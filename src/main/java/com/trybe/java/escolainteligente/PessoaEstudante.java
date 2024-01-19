@@ -8,9 +8,7 @@ public class PessoaEstudante {
    * Método calcularIdadeEmDias.
    */
   public static int calcularIdadeEmDias(int anos, int meses, int dias) {
-    int idadeEmDias = (anos * 365) + (meses * 60) + dias;
-    System.out.println("Sua idade e, dias é: " + idadeEmDias);
-    return idadeEmDias;
+    return (anos * 365) + (meses * 30) + dias;
   }
 
   /**
@@ -22,17 +20,17 @@ public class PessoaEstudante {
     String nome = scanData.nextLine();
 
     System.out.println("Qual a sua idade em anos, meses e dias?");
-    System.out.print("anos:");
+    System.out.print("anos: ");
     int anos = scanData.nextInt();
 
-    System.out.print("meses:");
+    System.out.print("meses: ");
     int meses = scanData.nextInt();
 
-    System.out.print("dias:");
+    System.out.print("dias: ");
     int dias = scanData.nextInt();
 
     int idade = calcularIdadeEmDias(anos, meses, dias);
-    System.out.println("A idade de " + nome + " em dias é " + idade);
+    System.out.println("A idade de " + nome + " em dias é " + idade + ".");
 
     scanData.close();
   }
