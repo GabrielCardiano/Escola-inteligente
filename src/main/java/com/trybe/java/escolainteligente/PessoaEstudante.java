@@ -19,19 +19,21 @@ public class PessoaEstudante {
   public static void coletarInformacoes() {
     System.out.println("Qual o nome da Pessoa Estudante?");
     Scanner scanData = new Scanner(System.in);
-    String nome = scanData.next();
+    String nome = scanData.nextLine();
 
     System.out.println("Qual a sua idade em anos, meses e dias?");
-    System.out.println("anos:");
+    System.out.print("anos:");
     int anos = scanData.nextInt();
 
-    System.out.println("meses:");
+    System.out.print("meses:");
     int meses = scanData.nextInt();
 
-    System.out.println("dias:");
+    System.out.print("dias:");
     int dias = scanData.nextInt();
 
     int idade = calcularIdadeEmDias(anos, meses, dias);
     System.out.println("A idade de " + nome + " em dias é " + idade);
+
+    scanData.close();
   }
 }
